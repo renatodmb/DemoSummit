@@ -28,7 +28,7 @@ class WP_Widget_Recent_Posts extends WP_Widget {
 			'description' => __( 'Your site&#8217;s most recent Posts.' ),
 			'customize_selective_refresh' => true,
 		);
-		parent::__construct( 'recent-posts', __( 'Recent Posts2.0' ), $widget_ops );
+		parent::__construct( 'recent-posts', __( 'Recent Posts2.1' ), $widget_ops );
 		$this->alt_option_name = 'widget_recent_entries';
 	}
 
@@ -47,7 +47,7 @@ class WP_Widget_Recent_Posts extends WP_Widget {
 			$args['widget_id'] = $this->id;
 		}
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts2.0' );
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts2.1' );
 
 		/** This filter is documented in wp-includes/widgets/class-wp-widget-pages.php */
 		$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
